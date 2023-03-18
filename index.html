@@ -23,31 +23,17 @@ https://templatemo.com/tm-512-moonlight
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
-<script type="application/ld+json">
-{
-    "@context": {
-	"foaf": "http://xmlns.com/foaf/0.1/"
-    },
-    "@id": "https://micdwild.github.io/#me",
-    "@type": "foaf:Person",
-    "foaf:name": "Michiel De Wilde",
-    "foaf:knows": "https://pietercolpaert.be/#me",
-    "foaf:knows": "https://sven-lieber.org/#me",
-    "foaf:knows": "https://lowie314.github.io/bds/#me"
-    }
-</script>
-
 <!--
-Added a turtle version as well because the jsonld did not show up in a SPARQL query
+Changed to turtle version because the jsonld did not show up in a SPARQL query
 -->
 <script type="text/turtle">
     @prefix foaf: <http://xmlns.com/foaf/0.1/> .
     
-    <https://micdwild.github.io/#me> foaf:Name 'Michiel De Wilde' ;
-    				     a foaf:Person ;
-  				     foaf:knows <https://pietercolpaert.be/#me> ;
-    				     foaf:knows <https://sven-lieber.org/#me> ;
-  				     foaf:knows <https://lowie314.github.io/bds/#me> .
+    <https://micdwild.github.io/#me> foaf:name 'Michiel De Wilde' .
+    <https://micdwild.github.io/#me> a foaf:Person .
+    <https://micdwild.github.io/#me> foaf:knows <https://pietercolpaert.be/#me> .
+    <https://micdwild.github.io/#me> foaf:knows <https://sven-lieber.org/#me> .
+    <https://micdwild.github.io/#me> foaf:knows <https://lowie314.github.io/bds/#me> .
 </script>
 	
 <body>
