@@ -23,6 +23,33 @@ https://templatemo.com/tm-512-moonlight
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
+<script type="application/ld+json">
+{
+    "@context": {
+	"foaf": "http://xmlns.com/foaf/0.1/"
+    },
+    "@id": "https://micdwild.github.io/#me",
+    "@type": "foaf:Person",
+    "foaf:name": "Michiel De Wilde",
+    "foaf:knows": "https://pietercolpaert.be/#me",
+    "foaf:knows": "https://sven-lieber.org/#me",
+    "foaf:knows": "https://lowie314.github.io/bds/#me"
+    }
+</script>
+
+<!--
+Added a turtle version as well because the jsonld did not show up in a SPARQL query
+-->
+<script type="text/turtle">
+    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+    
+    <https://micdwild.github.io/#me> foaf:Name 'Michiel De Wilde' ;
+    				     a foaf:Person ;
+  				     foaf:knows <https://pietercolpaert.be/#me> ;
+    				     foaf:knows <https://sven-lieber.org/#me> ;
+  				     foaf:knows <https://lowie314.github.io/bds/#me> .
+</script>
+	
 <body>
     
     <div class="sequence">
@@ -64,21 +91,7 @@ https://templatemo.com/tm-512-moonlight
                     <div class="col-md-6">
                         <div class="left-content">
                             <h2>About me</h2>
-                            <script type="application/ld+json">
-                                {
-                                "@context": {
-                                    "foaf": "http://xmlns.com/foaf/0.1/"
-                                },
-                                "@id": "https://micdwild.github.io/#me",
-                                "@type": "foaf:Person",
-                                "foaf:name": "Michiel De Wilde",
-                                "foaf:knows": "https://pietercolpaert.be/#me",
-                                "foaf:knows": "https://sven-lieber.org/#me",
-                                "foaf:knows": "https://lowie314.github.io/bds/#me"
-                                }
-                            </script>
-                                
-                            <p>I am Michiel De Wilde, a student in the second master of Computer Science Engineering at Ghent University.</p> 
+               		    <p>I am Michiel De Wilde, a student in the second master of Computer Science Engineering at Ghent University.</p> 
                             <p>This website is created solely for the purpose of a bonus point for the course Big Data Science.</p>
                         <div class="main-btn"><a href="#3">See the people I know</a></div>
                       </div>
